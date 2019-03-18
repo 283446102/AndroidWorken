@@ -64,6 +64,7 @@ public class ViewFlipperDemo_Activity extends AppCompatActivity {
                         isChange=false;
                     }
                 }
+//
                 if (isChange){
                     //往左滑，翻到下一页
                     if (mLastX - event.getX() > 200) {
