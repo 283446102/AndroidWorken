@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ProgressBar
+            android:id="@+id/browser_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Radiogoup2"
+        android:layout_below="@id/LinearLayout_progressBar">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Radiogoup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/goback_image_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:padding="5dp"
+            android:src="@drawable/goback_iocn" />
+
+        <ImageView
+            android:id="@+id/forward_image_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:padding="5dp"
+            android:src="@drawable/forward_icon" />
+
+        <ImageView
+            android:id="@+id/menu_radio_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:padding="5dp"
+            android:src="@drawable/menu_icon" />
+
+        <ImageView
+            android:id="@+id/window_number_radio_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:padding="5dp"
+            android:src="@drawable/window_number_icon" />
+
+        <ImageView
+            android:id="@+id/home_image_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:padding="5dp"
+            android:src="@drawable/home_icon" />
+
+    </LinearLayout>
+</RelativeLayout>

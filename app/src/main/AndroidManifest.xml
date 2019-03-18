@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.csu.demo">
+
+    <uses-permission android:name="csu.demo.myApp"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--指示灯和震动权限-->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".useless.MainActivity"/>
+        <activity android:name=".useless.SecondActivity" />
+        <activity android:name=".useless.ThirdActivity" />
+        <activity android:name=".useless.FourthActivity" />
+        <activity android:name=".duanxin" />
+        <activity android:name=".adobeActivity" />
+        <activity android:name=".browser_Activity" />
+        <activity android:name=".music_Activity" />
+        <activity android:name=".Main_Activity"/>
+
+        <activity android:name=".mytestActivity" />
+        <activity android:name=".viewPageDemo_Activity" />
+        <activity android:name=".ViewFlipperDemo_Activity" />
+        <activity android:name=".Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

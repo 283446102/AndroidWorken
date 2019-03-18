@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">纯牛奶</string>
+    <string name="static_radio_Bt">静态加载</string>
+    <string name="first_bt">提醒</string>
+    <string name="second_bt">信息</string>
+    <string name="third_bt">我的</string>
+    <string name="fourth_bt">设置</string>
+    <string name="first_view">最右</string>
+    <string name="second_view">动态</string>
+    <string name="third_view">消息</string>
+    <string name="fourth_view">我的</string>
+</resources>

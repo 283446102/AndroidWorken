@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <com.example.csu.library.NaviView
+            android:id="@+id/naviView_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:bigIconSrc="@drawable/big_zuiyou_normal"
+            app:iconHeight="50dp"
+            app:iconWidth="50dp"
+            app:range="1.2"
+            app:smallIconSrc="@drawable/small_zuiyou_normal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最右"
+                android:textSize="12sp" />
+        </com.example.csu.library.NaviView>
+
+        <com.example.csu.library.NaviView
+            android:id="@+id/naviView_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:bigIconSrc="@drawable/big_dynamic_normal"
+            app:iconHeight="50dp"
+            app:iconWidth="50dp"
+            app:range="1.2"
+            app:smallIconSrc="@drawable/small_dynamic_normal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动态"
+                android:textSize="12sp" />
+        </com.example.csu.library.NaviView>
+
+        <com.example.csu.library.NaviView
+            android:id="@+id/naviView_third"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:bigIconSrc="@drawable/big_message_normal"
+            app:iconHeight="50dp"
+            app:iconWidth="50dp"
+            app:range="1.2"
+            app:smallIconSrc="@drawable/small_message_normal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:textSize="12sp" />
+        </com.example.csu.library.NaviView>
+
+        <com.example.csu.library.NaviView
+            android:id="@+id/naviView_fourth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:bigIconSrc="@drawable/big_mine_normal"
+            app:iconHeight="50dp"
+            app:iconWidth="50dp"
+            app:range="1.2"
+            app:smallIconSrc="@drawable/small_mine_normal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textSize="12sp" />
+        </com.example.csu.library.NaviView>
+    </LinearLayout>
+<!--    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/LinearLayout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="最右"
+            android:textSize="12sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="动态"
+            android:textSize="12sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textSize="12sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:textSize="12sp" />
+    </LinearLayout>-->
+</RelativeLayout>
